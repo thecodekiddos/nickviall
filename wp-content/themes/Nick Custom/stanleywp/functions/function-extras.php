@@ -23,6 +23,8 @@ function bootstrap_styles()
 	wp_register_style( 'magnific', get_template_directory_uri() . '/css/magnific.css', array(), '0.9.4', 'all' );
 	wp_register_style( 'theme-style', get_stylesheet_uri(), false, '3.0.3' );
 
+	// Register Custom CSS for custom NICKVIALL.ME theme
+	wp_register_style( 'custom', get_template_directory_uri() . '/css/custom.css', array(), '0.0.1', 'all')
 
 	//  enqueue the style:
 	wp_enqueue_style( 'bootstrap' );
@@ -30,6 +32,8 @@ function bootstrap_styles()
 	wp_enqueue_style( 'font-awesome' );
 	wp_enqueue_style( 'magnific' );
 	wp_enqueue_style( 'theme-style' );
+	// enqueue custom.css file for NICKVIALL.ME theme
+	wp_enqueue_style( 'custom')
 	
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_styles' );
