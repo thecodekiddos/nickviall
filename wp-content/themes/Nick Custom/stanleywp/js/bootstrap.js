@@ -618,7 +618,8 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
         .addClass('collapse')
     }
 
-
+    /* THIS LINE WAS ADDED BY THE CODE KIDDOS (JVIALL) 08/30/16 */ 
+    this.$element.parent().parent().removeClass('nick-nav')
 
     if (!$.support.transition) return complete.call(this)
 
@@ -626,9 +627,6 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
       [dimension](0)
       .one($.support.transition.end, $.proxy(complete, this))
       .emulateTransitionEnd(350)
-
-      /* THIS LINE WAS ADDED BY THE CODE KIDDOS (JVIALL) 08/30/16 */ 
-    this.$element.parent().parent().removeClass('nick-nav')
   }
 
   Collapse.prototype.toggle = function () {

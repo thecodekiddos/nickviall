@@ -54,7 +54,7 @@
 
 <nav role="navigation">
     <div class="navbar navbar-inverse navbar-static-top nick-bg">
-        <div class="container">
+        <div class="container nick-head">
            <!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
             <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">

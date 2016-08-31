@@ -45,3 +45,48 @@ border: none;
 		background-size:auto 190px;
 	}
 }
+
+
+@media (min-width: 768px){
+
+	/* 
+     * Move Site Title/Logo Above Menu for non-mobile screens 
+     * 
+ 	 * Move Menu to align left underneath site title/logo.
+ 	 */
+	.container>.navbar-header{
+		position: relative;
+		top: -50px;
+		float:left;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	/* F**k this "right" bs */
+	.navbar-right{
+		margin-right: 0 !important;
+		margin-left: 0;	
+		float: left !important;
+		position: fixed;
+
+	}
+	.container.nick-head{
+		margin-left: 30px;
+		margin-right; auto;
+	}
+}
+
+/*
+ * Media queries used by bootstrap.css
+ */
+
+/*
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+*/
+
+
+
+
