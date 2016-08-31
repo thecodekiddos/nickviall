@@ -21,3 +21,27 @@ background: #000 url("http://i.imgur.com/nX9SQPu.png") no-repeat top right;
 background-size:auto 100%;
 border: none;
 } 
+
+/* Overide StanleyWP styles for mobil menu*/
+.in, .collapsing{
+	background: #000;
+	border: none;
+	box-shadow: none;
+}
+
+/*
+ * Move mobile menu so that it expands from the bottom of the header
+ */
+.nick-nav { padding-bottom: 0; }
+
+/*
+ * Make Header Image Size Static when in mobile
+ */
+ @media (max-width: 767px){
+	.nick-bg {
+		-o-background-size: auto 190px;
+		-webkit-background-size: auto 190px;
+		-moz-background-size: auto 190px;
+		background-size:auto 190px;
+	}
+}
