@@ -562,6 +562,9 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
       .addClass('collapsing')
       [dimension](0)
 
+    /* THIS LINE WAS ADDED BY THE CODE KIDDOS (JVIALL) 08/30/16 */ 
+    this.$element.parent().parent().addClass('nick-nav')
+        
     this.transitioning = 1
 
     var complete = function () {
@@ -571,6 +574,8 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
         [dimension]('auto')
       this.transitioning = 0
       this.$element.trigger('shown.bs.collapse')
+
+      
     }
 
     if (!$.support.transition) return complete.call(this)
@@ -603,6 +608,8 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
 
     this.transitioning = 1
 
+    
+
     var complete = function () {
       this.transitioning = 0
       this.$element
@@ -610,6 +617,9 @@ if (typeof jQuery === "undefined") { throw new Error("Bootstrap requires jQuery"
         .removeClass('collapsing')
         .addClass('collapse')
     }
+
+    /* THIS LINE WAS ADDED BY THE CODE KIDDOS (JVIALL) 08/30/16 */ 
+    this.$element.parent().parent().removeClass('nick-nav')
 
     if (!$.support.transition) return complete.call(this)
 

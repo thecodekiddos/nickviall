@@ -8,6 +8,85 @@
  * Last Edit: James Viall 08/23/16
  */
 
+ 
+
+ /*
+  * Header Image (from imgur @thecodekiddos)
+  */
 .navbar-inverse {
-background-color: #000000;
+background: #000 url("http://i.imgur.com/nX9SQPu.png") no-repeat top right;
+-o-background-size: auto 100%;
+-webkit-background-size: auto 100%;
+-moz-background-size: auto 100%;
+background-size:auto 100%;
+border: none;
 } 
+
+/* Overide StanleyWP styles for mobil menu*/
+.in, .collapsing{
+	background: #000;
+	border: none;
+	box-shadow: none;
+}
+
+/*
+ * Move mobile menu so that it expands from the bottom of the header
+ */
+.nick-nav { padding-bottom: 0; }
+
+/*
+ * Make Header Image Size Static when in mobile
+ */
+ @media (max-width: 767px){
+	.nick-bg {
+		-o-background-size: auto 190px;
+		-webkit-background-size: auto 190px;
+		-moz-background-size: auto 190px;
+		background-size:auto 190px;
+	}
+}
+
+
+@media (min-width: 768px){
+
+	/* 
+     * Move Site Title/Logo Above Menu for non-mobile screens 
+     * 
+ 	 * Move Menu to align left underneath site title/logo.
+ 	 */
+	.container>.navbar-header{
+		position: relative;
+		top: -50px;
+		float:left;
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	/* F**k this "right" bs */
+	.navbar-right{
+		margin-right: 0 !important;
+		margin-left: 0;	
+		float: left !important;
+		position: fixed;
+
+	}
+	.container.nick-head{
+		margin-left: 30px;
+		margin-right; auto;
+	}
+}
+
+/*
+ * Media queries used by bootstrap.css
+ */
+
+/*
+
+@media (min-width: 992px) { }
+
+@media (min-width: 1200px) { }
+
+*/
+
+
+
+
