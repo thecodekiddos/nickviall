@@ -8,6 +8,16 @@
  * Last Edit: James Viall 08/23/16
  */
 
+ 
+
+ /*
+  * Header Image (from imgur @thecodekiddos)
+  */
 .navbar-inverse {
-background-color: #000000;
+background: #000 url("http://i.imgur.com/nX9SQPu.png") no-repeat top right;
+-o-background-size: auto 100%;
+-webkit-background-size: auto 100%;
+-moz-background-size: auto 100%;
+background-size:auto 100%;
+border: none;
 } 
