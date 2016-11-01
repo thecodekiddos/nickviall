@@ -37,7 +37,7 @@
   $color_id = 'grey';
   ?>
   
-  <div id="ms-container"><!-- MASONRY.JS CONTAINER -->
+
   <?php while (have_posts()) : the_post(); ?>
 
   <?php
@@ -99,7 +99,7 @@
 
 
               <?php endwhile; ?>
-              </div> <!-- /#ms-container -->
+             
 
               <?php if (  $wp_query->max_num_pages > 1 ) : ?>
               <div class="container">
@@ -150,7 +150,7 @@
         jQuery(window).load(function() {
         
       // MASSONRY Without jquery
-      var container = document.querySelector('#ms-container');
+      var container = document.querySelector('#wrapper');
       var msnry = new Masonry( container, {
         itemSelector: '.ms-post',
         columnWidth: '.ms-post',                
