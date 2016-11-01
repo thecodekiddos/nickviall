@@ -10,6 +10,9 @@ function bootstrap_scripts()
 	wp_enqueue_script( 'bootstrap-script' );
 	wp_enqueue_script( 'hover-script' );
 	wp_enqueue_script( 'main-script' );
+
+	// Pull Masonry from the core of WordPress
+	wp_enqueue_script( 'masonry' );
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
 
