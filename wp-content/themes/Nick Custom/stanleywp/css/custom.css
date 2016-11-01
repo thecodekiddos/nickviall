@@ -8,19 +8,26 @@
  * Last Edit: James Viall 08/23/16
  */
 
+
+body {
+	font-family: 'Nunito', sans-serif;
+}
  
 
  /*
   * Header Image (from imgur @thecodekiddos)
   */
 .navbar-inverse {
-background: #000 url("http://i.imgur.com/nX9SQPu.png") no-repeat top right;
--o-background-size: auto 100%;
--webkit-background-size: auto 100%;
--moz-background-size: auto 100%;
-background-size:auto 100%;
-border: none;
+	font-size: 1.5em;
+	font-weight: 300;
+	background: #000 url("http://i.imgur.com/nX9SQPu.png") no-repeat top right;
+    background-size: auto 100%;
+    -webkit-background-size: auto 100%;
+    -moz-background-size: auto 100%;
+    background-size:auto 100%;
+    border: none;
 } 
+.navbar-brand{ font-size: 1.5em; }
 
 /* Overide StanleyWP styles for mobil menu*/
 .in, .collapsing{
@@ -33,6 +40,10 @@ border: none;
  * Move mobile menu so that it expands from the bottom of the header
  */
 .nick-nav { padding-bottom: 0; }
+
+header { font-family: 'Poppins', sans-serif; }
+
+.navbar { text-transform: none; }
 
 /*
  * Make Header Image Size Static when in mobile
@@ -73,6 +84,13 @@ border: none;
 		margin-left: 30px;
 		margin-right; auto;
 	}
+	ul.dropdown-menu{
+		
+	}
+	.navbar-right .dropdown-menu {
+    right: auto;
+    left: 0;
+  }
 }
 
 /*

@@ -10,6 +10,9 @@ function bootstrap_scripts()
 	wp_enqueue_script( 'bootstrap-script' );
 	wp_enqueue_script( 'hover-script' );
 	wp_enqueue_script( 'main-script' );
+
+	// Pull Masonry from the core of WordPress
+	wp_enqueue_script( 'masonry' );
 }
 add_action( 'wp_enqueue_scripts', 'bootstrap_scripts' );
 
@@ -40,7 +43,7 @@ add_action( 'wp_enqueue_scripts', 'bootstrap_styles' );
 
 
   function load_fonts() {
-            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700');
+            wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins|Nunito');
             wp_enqueue_style( 'googleFonts');
         }
  
