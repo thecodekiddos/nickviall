@@ -36,7 +36,8 @@
   $c = 0; 
   $color_id = 'grey';
   ?>
-
+  
+  <div id="ms-container"><!-- MASONRY.JS CONTAINER -->
   <?php while (have_posts()) : the_post(); ?>
 
   <?php
@@ -97,10 +98,11 @@
 
 
 
-              <?php endwhile; ?> 
+              <?php endwhile; ?>
+              </div> <!-- /#ms-container -->
 
               <?php if (  $wp_query->max_num_pages > 1 ) : ?>
-              <div class="container ms-container">
+              <div class="container">
 
               <div class="row">
                 <div class="col-lg-8 col-lg-offset-2">
