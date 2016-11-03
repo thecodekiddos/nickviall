@@ -36,6 +36,7 @@
   $c = 0; 
   $color_id = 'grey';
   ?>
+  
 
   <?php while (have_posts()) : the_post(); ?>
 
@@ -47,7 +48,7 @@
           $color_id = 'white'; }
           ?>
 
-          <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+          <article id="post-<?php the_ID(); ?>" class="ms-post <?php post_class(); ?>">
 
            <div id="<?php echo $color_id ?>">
             <div class="container">
@@ -97,7 +98,8 @@
 
 
 
-              <?php endwhile; ?> 
+              <?php endwhile; ?>
+             
 
               <?php if (  $wp_query->max_num_pages > 1 ) : ?>
               <div class="container">
@@ -141,5 +143,22 @@
 
 
    </div> <!-- /col-lg-8 -->
+
+<!-- MASONRY.JS -->
+<script type="text/javascript">
+        
+        jQuery(window).load(function() {
+        
+      // MASSONRY Without jquery
+      var container = document.querySelector('#wrapper');
+      var msnry = new Masonry( container, {
+        itemSelector: '.ms-post',
+        columnWidth: '.ms-post',                
+      });  
+      
+        });
+
+      
+    </script>
 
    <?php get_footer(); ?>

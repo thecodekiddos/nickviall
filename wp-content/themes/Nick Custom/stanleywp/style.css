@@ -178,3 +178,8 @@ bt { font-size: 12px; }
 /* WP User Avatar */
 
 .wp-user-avatar {margin: 0;}
+
+/* Masonry.js Styles */
+.ms-post {
+	width: 30%;
+}
